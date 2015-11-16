@@ -373,7 +373,7 @@
               <MiscControls>--C99</MiscControls>
               <Define>USE_HAL_DRIVER,STM32F417xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Inc;   ../Drivers/STM32F4xx_HAL_Driver/Inc;   ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;   ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F;   ../Middlewares/Third_Party/FreeRTOS/Source/include;   ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS;   ../Drivers/CMSIS/Include;   ../Drivers/CMSIS/Device/ST/STM32F4xx/Include;   ..\BusinessLayer\inc;   ..\IO;   ..\Users\inc;   ..\Hardwares\inc</IncludePath>
+              <IncludePath>../Inc;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS;../Drivers/CMSIS/Include;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;..\IO;..\Hardwares\inc;..\Console\inc</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -628,6 +628,16 @@
               <FileName>gpio.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Src/gpio.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Application/Console</GroupName>
+          <Files>
+            <File>
+              <FileName>ConsoleIf.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Console\src\ConsoleIf.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -914,16 +924,6 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>BusinessLayer</GroupName>
-          <Files>
-            <File>
-              <FileName>ConsoleIf.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\BusinessLayer\src\ConsoleIf.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
           <GroupName>Hardwares</GroupName>
           <Files>
             <File>
@@ -945,16 +945,6 @@
               <FileName>debug_out.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\IO\debug_out.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>Users</GroupName>
-          <Files>
-            <File>
-              <FileName>ConfigManagment.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Users\src\ConfigManagment.c</FilePath>
             </File>
           </Files>
         </Group>
